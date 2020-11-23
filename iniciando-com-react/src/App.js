@@ -1,22 +1,15 @@
 import React from 'react';
 
+class App extends React.Component {
 
-function App(){
-  return(
-    <>
-    <h1>Hello</h1>
-    </>
-  )
-}
-
-// Componentes de Classe
-
-class AppClasse extends React.Component{
+  state = {
+    nome : 'Eduardo'
+  }
 
   render(){
     return(
       <>
-      <h1>Hello</h1>
+      <h1>Hello {this.state.nome} </h1>
       </>
     )
   }
